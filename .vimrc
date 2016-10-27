@@ -412,6 +412,9 @@
     " Find merge conflict markers
     map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 
+    " Map space to page down
+    map <space> <C-f>
+
     " Shortcuts
     " Change Working Directory to that of the current file
     cmap cwd lcd %:p:h
@@ -1246,6 +1249,13 @@
     if has('gui_running')
         if filereadable(expand("~/.gvimrc.local"))
             source ~/.gvimrc.local
+        endif
+    endif
+" }
+" Cscope config {
+    if has('cscope')
+        if filereadable("cscope.out")
+             cs add cscope.out
         endif
     endif
 " }

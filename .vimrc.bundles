@@ -160,6 +160,7 @@
             Bundle 'tpope/vim-commentary'
             Bundle 'godlygeek/tabular'
             Bundle 'luochen1990/rainbow'
+            Bundle 'wesleyche/SrcExpl'
             if executable('ctags')
                 Bundle 'majutsushi/tagbar'
             endif
@@ -291,6 +292,7 @@
             Bundle 'cespare/vim-toml'
             Bundle 'quentindecock/vim-cucumber-align-pipes'
             Bundle 'saltstack/salt-vim'
+            Bundle 'mhinz/vim-grepper'
         endif
     " }
 
